@@ -12,6 +12,9 @@
 // 16 MHz(ish) AVR --------------------------------------------------------
 #elif (F_CPU >= 15400000UL) && (F_CPU <= 19000000L)
 #define COUNT 6
+// 25 MHz(ish) AVR
+#elif (F_CPU >= 23125000UL) && (F_CPU <= 29687500L)
+#define COUNT 10
 #else
 #error "CPU SPEED NOT SUPPORTED"
 #endif
